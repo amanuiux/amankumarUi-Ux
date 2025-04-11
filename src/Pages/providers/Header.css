@@ -1,0 +1,20 @@
+.ButtonClass{
+    background-image: linear-gradient(to right, #a855f7, #4f46e5); /* from-purple-500 to-indigo-600 */
+    color: white;
+    font-weight: bold;
+    font-size: 1rem; /* text-base */
+    border-color: #e5e7eb; /* border-gray-200 */
+    border-spacing: 0.25rem; /* border-spacing-1 */
+    height: 60px;
+    width: 242px;
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.025em; /* tracking-wide */
+    transition: opacity 0.3s;
+  }
+  
+  .ButtonClass:hover {
+    opacity: 0.9;
+  }
+  
