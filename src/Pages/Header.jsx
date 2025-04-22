@@ -200,26 +200,41 @@ const HeroSection = () => {
               alt="Portfolio Line"
             />
           </div>
-          <div className="text-white justify-center align-center font-medium text-lg grid grid-cols-4 gap-6 text-center">
-            <p className="skilsection">Wireframe</p>
-            <p className="skilsection">Prototype</p>
-            <p className="skilsection">Mockups</p>
-            <p className="skilsection">Micro Animation</p>
-            <p className="skilsection">Client Handling</p>
-            <p className="skilsection">SaaS</p>
-            <p className="skilsection">Wireframe</p>
-            <p className="skilsection">Prototype</p>
-          </div>
+          <div className="mt-4">
+            <div className="grid grid-row-6 gap-4 mb-2">
+              <div className="text-white justify-center items-center font-medium text-lg flex flex-wrap gap-4 text-center">
+                <p className="skilsection">Wireframe</p>
+                <p className="skilsection">Prototype</p>
+                <p className="skilsection">Mockups</p>
+                <p className="skilsection">Micro Animation</p>
+                <p className="skilsection">Client Handling</p>
+                <p className="skilsection">SaaS</p>
+              </div>
+            </div>
 
-          <div className="text-white justify-center align-center font-medium text-lg grid grid-cols-4 mt-4 gap-6 text-center">
-            <p className="skilsection">Mobile UI</p>
-            <p className="skilsection">User Research</p>
-            <p className="skilsection">Information Architecture</p>
-            <p className="skilsection">ERP</p>
-            <p className="skilsection">User Flow</p>
-            <p className="skilsection">Card Shorting</p>
-            <p className="skilsection">Design Thinking</p>
-            <p className="skilsection">UX Testing</p>
+            <div className="grid grid-row-6 gap-4 mb-2">
+              <div className="text-white justify-center items-center font-medium text-lg flex flex-wrap gap-4 text-center">
+                {" "}
+                <p className="skilsection">Design System</p>
+                <p className="skilsection">Web Portal Design</p>
+                <p className="skilsection">Mobile UI</p>
+                <p className="skilsection">User Research</p>
+                <p className="skilsection">Information Architecture</p>
+                <p className="skilsection">ERP</p>
+              </div>
+            </div>
+
+            <div className="grid grid-row-6 gap-4 ">
+              <div className="text-white justify-center items-center font-medium text-lg flex flex-wrap gap-4 text-center">
+                {" "}
+                <p className="skilsection">User Flow</p>
+                <p className="skilsection">Card Shorting</p>
+                <p className="skilsection">Design Thinking</p>
+                <p className="skilsection">User Centered Design</p>
+                <p className="skilsection">UX Testing</p>
+                <p className="skilsection">Blockchain</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -260,15 +275,10 @@ const HeroSection = () => {
                       </p>
                     </div>
                     <p className="text-2xl font-semibold mt-2 text-gray-400">
-                      Frontend Developer
+                      (Sr. UI/UX Designer)
                     </p>
                     <p className="text-xl font-semibold mt-2 text-gray-400">
-                      2022 - Present
-                    </p>
-                    <p className="text-md font-semibold mt-2 text-gray-400">
-                      <span className="font-bold">Technologies:</span> Firebase,
-                      Socket.io, Agora, React.js, JavaScript, HTML/CSS, Ant
-                      Design
+                      July, 2024 - Currently Working
                     </p>
 
                     <div className="flex flex-wrap gap-6 mt-6">
@@ -337,19 +347,14 @@ const HeroSection = () => {
                         alt="Zillit Logo"
                       />
                       <p className="text-4xl font-semibold mt-4 ml-8 text-gray-300">
-                        Zillit
+                        Sunday Labs (Growpital | Zeeta farms)
                       </p>
                     </div>
                     <p className="text-2xl font-semibold mt-2 text-gray-400">
-                      Frontend Developer
+                      (UI/UX Designer)
                     </p>
                     <p className="text-xl font-semibold mt-2 text-gray-400">
-                      2022 - Present
-                    </p>
-                    <p className="text-md font-semibold mt-2 text-gray-400">
-                      <span className="font-bold">Technologies:</span> Firebase,
-                      Socket.io, Agora, React.js, JavaScript, HTML/CSS, Ant
-                      Design
+                      December, 2023 - April, 2024
                     </p>
 
                     <div className="flex flex-wrap gap-6 mt-6">
@@ -358,15 +363,7 @@ const HeroSection = () => {
                                     https://web.zillit.com/home"
                         target="_blank"
                         rel="noopener noreferrer"
-                      >
-                        <Button
-                          type="primary"
-                          size="large"
-                          className="ButtonClass"
-                        >
-                          Visit Zillit
-                        </Button>
-                      </a>
+                      ></a>
                     </div>
                   </div>
                 </Col>
@@ -379,16 +376,12 @@ const HeroSection = () => {
 "
                   >
                     <p>
-                      As a UI/UX Designer at ITOP, I contributed to the design
-                      of Zillit, a comprehensive dashboard tailored to manage
-                      and streamline all aspects of pre-production, production,
-                      and filmmaking processes. Collaborating closely with
-                      stakeholders, I ensured that Zillit met the unique
-                      requirements of Hollywood movie-making teams, facilitating
-                      efficient communication and workflow management. By
-                      creating user-centered designs, I simplified complex
-                      filmmaking tasks, enhancing team coordination and
-                      productivity.
+                      Working for Gropital (Zetta farms), My duty is to creating
+                      intuitive interfaces and delightful user experiences.
+                      Through collaboration with cross-functional teams, I
+                      design and iterate to ensure our digital products align
+                      with user needs and business goals, ultimately driving
+                      customer satisfaction and product success.
                     </p>
                   </div>
                 </Col>
@@ -418,19 +411,16 @@ const HeroSection = () => {
                         alt="Zillit Logo"
                       />
                       <p className="text-4xl font-semibold mt-4 ml-8 text-gray-300">
-                        Zillit
+                        Oodles Technology | Oodles Blockchain
                       </p>
                     </div>
                     <p className="text-2xl font-semibold mt-2 text-gray-400">
-                      Frontend Developer
+                      (UI/UX Designer)
                     </p>
                     <p className="text-xl font-semibold mt-2 text-gray-400">
-                      2022 - Present
+                      September, 2021 - December, 2023
                     </p>
-                    <p className="text-md font-semibold mt-2 text-gray-400">
-                      <span className="font-bold">Technologies:</span> Firebase,
-                      Socket.io, Agora, React.js, JavaScript, HTML/CSS, Ant
-                      Design
+                   
                     </p>
 
                     <div className="flex flex-wrap gap-6 mt-6">
@@ -439,15 +429,7 @@ const HeroSection = () => {
                                     https://web.zillit.com/home"
                         target="_blank"
                         rel="noopener noreferrer"
-                      >
-                        <Button
-                          type="primary"
-                          size="large"
-                          className="ButtonClass"
-                        >
-                          Visit Zillit
-                        </Button>
-                      </a>
+                      ></a>
                     </div>
                   </div>
                 </Col>
@@ -460,16 +442,11 @@ const HeroSection = () => {
 "
                   >
                     <p>
-                      As a UI/UX Designer at ITOP, I contributed to the design
-                      of Zillit, a comprehensive dashboard tailored to manage
-                      and streamline all aspects of pre-production, production,
-                      and filmmaking processes. Collaborating closely with
-                      stakeholders, I ensured that Zillit met the unique
-                      requirements of Hollywood movie-making teams, facilitating
-                      efficient communication and workflow management. By
-                      creating user-centered designs, I simplified complex
-                      filmmaking tasks, enhancing team coordination and
-                      productivity.
+                      Conducting user research and testing to gather feedback
+                      and ensure that the designs are optimized for user
+                      satisfaction. I am also create wireframes, prototypes, and
+                      high-fidelity designs, ensuring that they adhere to design
+                      principles and industry best practices.
                     </p>
                   </div>
                 </Col>
