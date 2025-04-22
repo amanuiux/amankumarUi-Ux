@@ -17,4 +17,23 @@
   .ButtonClass:hover {
     opacity: 0.9;
   }
-  
+  /* Frame 39 */
+
+/* Auto layout */
+
+.skilsection{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+position: relative;
+background: #1D1D1D;
+border: 1px solid #E9D0FF;
+border-radius: 100px;
+
+}
+
+.portfoliotext{
+  font-size: 1rem;
+}

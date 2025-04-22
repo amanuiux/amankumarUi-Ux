@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Button, Divider } from "antd";
+import { Row, Col, Button, Divider, Card } from "antd";
 import Union from "../assets/Icons/Union.png";
 import Group from "../assets/Icons/Group.png";
 import Line from "../assets/Icons/Line.png";
@@ -15,16 +15,27 @@ import github from "../assets/Icons/github.png";
 import topgridBG from "../../src/assets/Icons/topgridBG.png";
 import amanpic from "../../src/assets/Icons/amanpic.png";
 import "../../src/Pages/providers/Header.css";
+import Figma from "../../src/assets/Icons/Figma.png";
+import deepseek from "../../src/assets/Icons/deepseek.png";
+import ChatGPt from "../../src/assets/Icons/ChatGPt.png";
+import Adobe_XD from "../../src/assets/Icons/Adobe_XD.png";
+import Sketch_Logo from "../../src/assets/Icons/Sketch_Logo.png";
+import Adobe_Illustrator from "../../src/assets/Icons/Adobe_Illustrator.png";
+import Adobe_Photoshop from "../../src/assets/Icons/Adobe_Photoshop.png";
+import Protopie from "../../src/assets/Icons/Protopie.png";
+import expBG from "../../src/assets/Icons/expBG.png";
+import A from "../../src/assets/Icons/A.png";
+import B from "../../src/assets/Icons/B.png";
+import C from "../../src/assets/Icons/C.png";
+import D from "../../src/assets/Icons/D.png";
+import E from "../../src/assets/Icons/E.png";
+import F from "../../src/assets/Icons/F.png";
+import G from "../../src/assets/Icons/G.png";
+import H from "../../src/assets/Icons/H.png";
+import J from "../../src/assets/Icons/J.png";
+
 const HeroSection = () => {
-  const experiences = [
-    "Developed and integrated Firebase authentication for secure user login and registration.",
-    "Implemented User Management system to handle user roles and permissions.",
-    "Designed and developed Admin Modules with role-based access control (RBAC) for dynamic feature access.",
-    "Managed the User Onboarding process, including document management and user agreement signing.",
-    "Integrated Socket.io for real-time chat features and notifications.",
-    "Assisted in the integration of Agora for one-on-one and group video calling functionality.",
-    "Developed an SOS functionality for urgent user requests",
-  ];
+  const experiences = ["ADD TEXT HERE"];
 
   const phoneNumber = "9953558983";
   const message = encodeURIComponent("Hi there, I want to get in touch!");
@@ -36,7 +47,7 @@ const HeroSection = () => {
 
       {/* Grid Background */}
       <div
-        className="absolute inset-0   z-0 pointer-events-none"
+        className="absolute inset-0   z-50 pointer-events-none"
         style={{
           backgroundImage: `url(${topgridBG})`,
           backgroundRepeat: "no-repeat",
@@ -49,7 +60,7 @@ const HeroSection = () => {
         <Row justify="center" className="z-10 relative mb-10">
           <div className="bg-black rounded-[9px] px-6 py-1 shadow border border-gray-700  w-[447px]">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-1 ">
-              <a href="/resume.pdf" download className="w-full sm:w-auto">
+              <a href="/AmanResume.pdf" download className="w-full sm:w-auto">
                 <Button
                   type="default"
                   className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
@@ -135,260 +146,625 @@ const HeroSection = () => {
             />
           </Col>
         </Row>
-      </div>
-      {/* <div className="mt-10 flex flex-col items-center text-center">
-                <h2 className="text-2xl">Skills</h2>
-                <img
-                    src={Line}
-                    alt="Portfolio Line"
-                    className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
-                />
-            </div> */}
 
-      {/* Skills Placeholder */}
-      <div className="mt-6 flex flex-col items-center text-center">
-        <h1 className="text-4xl text-white">Tools</h1>
-        <div className=" p-4 rounded-lg text-center">
-          <img
-            src={Line}
-            className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
-            alt="Portfolio Line"
-          />
+        {/* Skills Placeholder */}
+        <div className="mt-12 flex flex-col items-center text-center">
+          <h1 className="text-4xl text-white">Tools</h1>
+          <div className="  rounded-lg text-center">
+            <img
+              src={Line}
+              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-8"
+              alt="Portfolio Line"
+            />
+          </div>
         </div>
-      </div>
 
-      
-      <div>
+        <div>
+          <div className="flex flex-wrap gap-8 justify-center mt-4">
+            <div className=" p-4 rounded-lg text-center">
+              <img src={Figma} />
+            </div>
+            <div className=" p-4 rounded-lg text-center">
+              <img src={Adobe_XD} />
+            </div>
+            <div className=" p-4 rounded-lg text-center">
+              <img src={Sketch_Logo} />
+            </div>
+            <div className=" p-4 rounded-lg text-center">
+              <img src={Adobe_Photoshop} />
+            </div>
+            <div className=" p-4 rounded-lg text-center">
+              <img src={Adobe_Illustrator} />
+            </div>
+          </div>
+        </div>
+
         <div className="flex flex-wrap gap-8 justify-center mt-4">
-          <div className="p-4 rounded-lg text-center">
-            <img src={Html} alt="Portfolio Line" />
+          <div className=" p-4 rounded-lg text-center">
+            <img src={Protopie} />
           </div>
           <div className=" p-4 rounded-lg text-center">
-            <img src={Bootstrap} />
+            <img src={ChatGPt} />
           </div>
           <div className=" p-4 rounded-lg text-center">
-            <img src={Reactlogo} />
-          </div>
-          <div className=" p-4 rounded-lg text-center">
-            <img src={javascriptlogo} />
-          </div>
-          <div className=" p-4 rounded-lg text-center">
-            <img src={Antd} />
+            <img src={deepseek} />
           </div>
         </div>
-      </div>
-      <div className="">
-        <h1 className="text-4xl text-white">Skills</h1>
-        <div className="flex text-white font-bold flex-col items-center text-center">
-          <h1>Test 1 </h1>
-          <h1>Test 1 </h1>
-          <h1>Test 1 </h1>
-          <h1>Test 1 </h1>
-          <h1>Test 1 </h1>
-          <h1>Test 1 </h1>
-          <h1>Test 1 </h1>
-          <h1>Test 1 </h1>
-          <h1>Test 1 </h1>
-          <h1>Test 1 </h1>
-        </div>
-      </div>
-      <div className="mt-6 flex flex-col items-center text-center">
-        <h1 className="text-4xl text-white">Experience</h1>
-        <div className=" p-4 rounded-lg text-center">
-          <div className=" p-4 rounded-lg text-center">
+
+        <div className="mt-12 flex flex-col items-center text-center">
+          <h1 className="text-4xl text-white">Skills</h1>
+          <div className="  rounded-lg text-center">
             <img
               src={Line}
-              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
+              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-8"
               alt="Portfolio Line"
             />
           </div>
+          <div className="text-white justify-center align-center font-medium text-lg grid grid-cols-4 gap-6 text-center">
+            <p className="skilsection">Wireframe</p>
+            <p className="skilsection">Prototype</p>
+            <p className="skilsection">Mockups</p>
+            <p className="skilsection">Micro Animation</p>
+            <p className="skilsection">Client Handling</p>
+            <p className="skilsection">SaaS</p>
+            <p className="skilsection">Wireframe</p>
+            <p className="skilsection">Prototype</p>
+          </div>
+
+          <div className="text-white justify-center align-center font-medium text-lg grid grid-cols-4 mt-4 gap-6 text-center">
+            <p className="skilsection">Mobile UI</p>
+            <p className="skilsection">User Research</p>
+            <p className="skilsection">Information Architecture</p>
+            <p className="skilsection">ERP</p>
+            <p className="skilsection">User Flow</p>
+            <p className="skilsection">Card Shorting</p>
+            <p className="skilsection">Design Thinking</p>
+            <p className="skilsection">UX Testing</p>
+          </div>
         </div>
-      </div>
 
-      <div className="relative w-full z-10 px-6 py-10 rounded shadow-md overflow-hidden">
-        {/* Background Overlay */}
-        <div className="absolute inset-0 w-full opacity-50 z-0"></div>
+        <div className="mt-6 flex flex-col items-center text-center">
+          <h1 className="text-4xl text-white">Work Experience</h1>
+          <div className=" p-4 rounded-lg text-center">
+            <div className=" p-4 rounded-lg text-center">
+              <img
+                src={Line}
+                className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
+                alt="Portfolio Line"
+              />
+            </div>
+          </div>
+          <div className="relative z-10 p-0 rounded-xl bg-gradient-to-r from-[#E9D0FF] to-[#424242]">
+            <Card
+              className="bg-[#131313] rounded-xl"
+              style={{
+                backgroundImage: `url(${expBG})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            >
+              {" "}
+              <Row gutter={[32, 32]} align="middle">
+                {/* Left Column */}
+                <Col xs={24} md={12}>
+                  <div className="text-left px-4 ">
+                    <div>
+                      {" "}
+                      <img
+                        src={zillitlogo}
+                        className="rounded-xl border-[3px] border-white text-lg h-32 w-32 mt-2"
+                        alt="Zillit Logo"
+                      />
+                      <p className="text-4xl font-semibold mt-4 ml-8 text-gray-300">
+                        Zillit
+                      </p>
+                    </div>
+                    <p className="text-2xl font-semibold mt-2 text-gray-400">
+                      Frontend Developer
+                    </p>
+                    <p className="text-xl font-semibold mt-2 text-gray-400">
+                      2022 - Present
+                    </p>
+                    <p className="text-md font-semibold mt-2 text-gray-400">
+                      <span className="font-bold">Technologies:</span> Firebase,
+                      Socket.io, Agora, React.js, JavaScript, HTML/CSS, Ant
+                      Design
+                    </p>
 
-        {/* Content */}
-        <div
-          className="relative z-10"
-          //   style={{
-          //     backgroundImage: `url(${Union})`,
-          //     backgroundRepeat: "no-repeat",
-          //     backgroundSize: "cover",
-          //   }}
-        >
-          <Row gutter={[32, 32]} align="middle">
-            {/* Left Column */}
-            <Col xs={24} md={12}>
-              <div className="text-left px-8 ">
-                <div>
-                  {" "}
-                  <img
-                    src={zillitlogo}
-                    className="rounded-xl border-[3px] border-white text-lg h-32 w-32 mt-2"
-                    alt="Zillit Logo"
-                  />
-                  <p className="text-4xl font-semibold mt-4 ml-8 text-gray-300">
-                    Zillit
-                  </p>
-                </div>
-                <p className="text-2xl font-semibold mt-2 text-gray-400">
-                  Frontend Developer
-                </p>
-                <p className="text-xl font-semibold mt-2 text-gray-400">
-                  2022 - Present
-                </p>
-                <p className="text-md font-semibold mt-2 text-gray-400">
-                  <span className="font-bold">Technologies:</span> Firebase,
-                  Socket.io, Agora, React.js, JavaScript, HTML/CSS, Ant Design
-                </p>
-
-                <div className="flex flex-wrap gap-6 mt-6">
-                  <a
-                    href="
+                    <div className="flex flex-wrap gap-6 mt-6">
+                      <a
+                        href="
                                     https://web.zillit.com/home"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          type="primary"
+                          size="large"
+                          className="ButtonClass"
+                        >
+                          Visit Zillit
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </Col>
+
+                {/* Right Column - Experience List */}
+                <Col xs={24} md={12}>
+                  <div
+                    className="text-white gap-3 md:p-6 text-lg font-md p-4 leading-loose
+
+"
                   >
-                    <Button type="primary" size="large" className="ButtonClass">
-                      Visit Zillit
-                    </Button>
-                  </a>
-                </div>
-              </div>
-            </Col>
+                    <p>
+                      As a UI/UX Designer at ITOP, I contributed to the design
+                      of Zillit, a comprehensive dashboard tailored to manage
+                      and streamline all aspects of pre-production, production,
+                      and filmmaking processes. Collaborating closely with
+                      stakeholders, I ensured that Zillit met the unique
+                      requirements of Hollywood movie-making teams, facilitating
+                      efficient communication and workflow management. By
+                      creating user-centered designs, I simplified complex
+                      filmmaking tasks, enhancing team coordination and
+                      productivity.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Card>
+          </div>
 
-            {/* Right Column - Experience List */}
-            <Col xs={24} md={12}>
-              <div className="text-white p-2 md:p-6">
-                <ul className="list-disc pl-5 space-y-4 text-base md:text-lg leading-relaxed text-gray-300">
-                  {experiences.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </Col>
-          </Row>
-        </div>
-      </div>
+          <div className="relative z-10 p-0 mt-6 rounded-xl bg-gradient-to-r from-[#E9D0FF] to-[#424242]">
+            <Card
+              className="bg-[#131313] rounded-xl"
+              style={{
+                backgroundImage: `url(${expBG})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            >
+              {" "}
+              <Row gutter={[32, 32]} align="middle">
+                {/* Left Column */}
+                <Col xs={24} md={12}>
+                  <div className="text-left px-4 ">
+                    <div>
+                      {" "}
+                      <img
+                        src={zillitlogo}
+                        className="rounded-xl border-[3px] border-white text-lg h-32 w-32 mt-2"
+                        alt="Zillit Logo"
+                      />
+                      <p className="text-4xl font-semibold mt-4 ml-8 text-gray-300">
+                        Zillit
+                      </p>
+                    </div>
+                    <p className="text-2xl font-semibold mt-2 text-gray-400">
+                      Frontend Developer
+                    </p>
+                    <p className="text-xl font-semibold mt-2 text-gray-400">
+                      2022 - Present
+                    </p>
+                    <p className="text-md font-semibold mt-2 text-gray-400">
+                      <span className="font-bold">Technologies:</span> Firebase,
+                      Socket.io, Agora, React.js, JavaScript, HTML/CSS, Ant
+                      Design
+                    </p>
 
-      <div className="mt-6 flex flex-col items-center text-center">
-        <h1 className="text-4xl text-white">Want to hire</h1>
-        <div className=" p-4 rounded-lg text-center">
-          <div className=" p-4 rounded-lg text-center">
-            <img
-              src={Line}
-              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
-              alt="Portfolio Line"
-            />
+                    <div className="flex flex-wrap gap-6 mt-6">
+                      <a
+                        href="
+                                    https://web.zillit.com/home"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          type="primary"
+                          size="large"
+                          className="ButtonClass"
+                        >
+                          Visit Zillit
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </Col>
+
+                {/* Right Column - Experience List */}
+                <Col xs={24} md={12}>
+                  <div
+                    className="text-white gap-3 md:p-6 text-lg font-md p-4 leading-loose
+
+"
+                  >
+                    <p>
+                      As a UI/UX Designer at ITOP, I contributed to the design
+                      of Zillit, a comprehensive dashboard tailored to manage
+                      and streamline all aspects of pre-production, production,
+                      and filmmaking processes. Collaborating closely with
+                      stakeholders, I ensured that Zillit met the unique
+                      requirements of Hollywood movie-making teams, facilitating
+                      efficient communication and workflow management. By
+                      creating user-centered designs, I simplified complex
+                      filmmaking tasks, enhancing team coordination and
+                      productivity.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Card>
+          </div>
+
+          <div className="relative z-10 p-0 mt-6 rounded-xl bg-gradient-to-r from-[#E9D0FF] to-[#424242]">
+            <Card
+              className="bg-[#131313] rounded-xl"
+              style={{
+                backgroundImage: `url(${expBG})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            >
+              {" "}
+              <Row gutter={[32, 32]} align="middle">
+                {/* Left Column */}
+                <Col xs={24} md={12}>
+                  <div className="text-left px-4 ">
+                    <div>
+                      {" "}
+                      <img
+                        src={zillitlogo}
+                        className="rounded-xl border-[3px] border-white text-lg h-32 w-32 mt-2"
+                        alt="Zillit Logo"
+                      />
+                      <p className="text-4xl font-semibold mt-4 ml-8 text-gray-300">
+                        Zillit
+                      </p>
+                    </div>
+                    <p className="text-2xl font-semibold mt-2 text-gray-400">
+                      Frontend Developer
+                    </p>
+                    <p className="text-xl font-semibold mt-2 text-gray-400">
+                      2022 - Present
+                    </p>
+                    <p className="text-md font-semibold mt-2 text-gray-400">
+                      <span className="font-bold">Technologies:</span> Firebase,
+                      Socket.io, Agora, React.js, JavaScript, HTML/CSS, Ant
+                      Design
+                    </p>
+
+                    <div className="flex flex-wrap gap-6 mt-6">
+                      <a
+                        href="
+                                    https://web.zillit.com/home"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          type="primary"
+                          size="large"
+                          className="ButtonClass"
+                        >
+                          Visit Zillit
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </Col>
+
+                {/* Right Column - Experience List */}
+                <Col xs={24} md={12}>
+                  <div
+                    className="text-white gap-3 md:p-6 text-lg font-md p-4 leading-loose
+
+"
+                  >
+                    <p>
+                      As a UI/UX Designer at ITOP, I contributed to the design
+                      of Zillit, a comprehensive dashboard tailored to manage
+                      and streamline all aspects of pre-production, production,
+                      and filmmaking processes. Collaborating closely with
+                      stakeholders, I ensured that Zillit met the unique
+                      requirements of Hollywood movie-making teams, facilitating
+                      efficient communication and workflow management. By
+                      creating user-centered designs, I simplified complex
+                      filmmaking tasks, enhancing team coordination and
+                      productivity.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Card>
           </div>
         </div>
-      </div>
-      <Row justify="center" className="z-10 relative mb-10 gap-3">
-        {/* <div className="bg-black rounded-xl px-4 h-14 flex items-center gap-4 shadow border border-gray-700"> */}
-        <a href="/resume.pdf" download>
-          <Button type="primary" className="ButtonClass">
-            Download Resume
-          </Button>
-        </a>
 
-        {/* <Button
+        <div className="mt-6 flex flex-col items-center text-center">
+          <h1 className="text-4xl text-white">Want to hire</h1>
+          <div className=" p-4 rounded-lg text-center">
+            <div className=" p-4 rounded-lg text-center">
+              <img
+                src={Line}
+                className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
+                alt="Portfolio Line"
+              />
+            </div>
+          </div>
+        </div>
+        <Row justify="center" className="z-10 relative mb-10 gap-3">
+          {/* <div className="bg-black rounded-xl px-4 h-14 flex items-center gap-4 shadow border border-gray-700"> */}
+          <a href="/resume.pdf" download>
+            <Button type="primary" className="ButtonClass">
+              Download Resume
+            </Button>
+          </a>
+
+          {/* <Button
                     type="default"
                     className="rounded-full bg-gradient-to-r from-purple-600 to-blue-600 hover:scale-105 transition w-52 h-14 font-bold text-white"
                 >
                     Contact Now
                 </Button> */}
 
-        <a href={waLink} target="_blank" rel="noopener noreferrer">
-          <Button type="primary" className="ButtonClass">
-            Contact Now
-          </Button>
-        </a>
-        {/* </div> */}
-      </Row>
+          <a href={waLink} target="_blank" rel="noopener noreferrer">
+            <Button type="primary" className="ButtonClass">
+              Contact Now
+            </Button>
+          </a>
+          {/* </div> */}
+        </Row>
 
-      <div className="mt-6 flex flex-col items-center text-center">
-        <h1 className="text-4xl text-white">Contact Me</h1>
-        <div className=" p-4 rounded-lg text-center">
-          <div className=" p-4 rounded-lg text-center">
+        <div className="mt-12 flex flex-col items-center text-center">
+          <h1 className="text-4xl text-white">Portfolio</h1>
+          <div className="  rounded-lg text-center">
             <img
               src={Line}
-              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
+              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-8"
               alt="Portfolio Line"
             />
           </div>
+
+          <div className="flex flex-wrap gap-8 justify-center mt-4 ">
+            {" "}
+            <Card
+              hoverable
+              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={A} className="h-72 object-cover" />
+              }
+            >
+              <div className="flex items-center justify-between pt-4">
+                <Button
+                  type="text"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  //   icon={<FiFigma size={24} />}
+                >
+                  View More
+                </Button>
+                <span className="text-white text-3xl">→</span>
+              </div>
+            </Card>
+            <Card
+              hoverable
+              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={A} className="h-72 object-cover" />
+              }
+            >
+              <div className="flex items-center justify-between pt-4">
+                <Button
+                  type="text"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  //   icon={<FiFigma size={24} />}
+                >
+                  View More
+                </Button>
+                <span className="text-white text-3xl">→</span>
+              </div>
+            </Card>
+            <Card
+              hoverable
+              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={B} className="h-72 object-cover" />
+              }
+            >
+              <div className="flex items-center justify-between pt-4">
+                <Button
+                  type="text"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  //   icon={<FiFigma size={24} />}
+                >
+                  View More
+                </Button>
+                <span className="text-white text-3xl">→</span>
+              </div>
+            </Card>
+            <Card
+              hoverable
+              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={C} className="h-72 object-cover" />
+              }
+            >
+              <div className="flex items-center justify-between pt-4">
+                <Button
+                  type="text"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  //   icon={<FiFigma size={24} />}
+                >
+                  View More
+                </Button>
+                <span className="text-white text-3xl">→</span>
+              </div>
+            </Card>
+            <Card
+              hoverable
+              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={D} className="h-72 object-cover" />
+              }
+            >
+              <div className="flex items-center justify-between pt-4">
+                <Button
+                  type="text"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  //   icon={<FiFigma size={24} />}
+                >
+                  View More
+                </Button>
+                <span className="text-white text-3xl">→</span>
+              </div>
+            </Card>
+            <Card
+              hoverable
+              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={E} className="h-72 object-cover" />
+              }
+            >
+              <div className="flex items-center justify-between pt-4">
+                <Button
+                  type="text"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  //   icon={<FiFigma size={24} />}
+                >
+                  View More
+                </Button>
+                <span className="text-white text-3xl">→</span>
+              </div>
+            </Card>
+            <Card
+              hoverable
+              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={F} className="h-72 object-cover" />
+              }
+            >
+              <div className="flex items-center justify-between pt-4">
+                <Button
+                  type="text"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  //   icon={<FiFigma size={24} />}
+                >
+                  View More
+                </Button>
+                <span className="text-white text-3xl">→</span>
+              </div>
+            </Card>
+            <Card
+              hoverable
+              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={G} className="h-72 object-cover" />
+              }
+            >
+              <div className="flex items-center justify-between pt-4">
+                <Button
+                  type="text"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  //   icon={<FiFigma size={24} />}
+                >
+                  View More
+                </Button>
+                <span className="text-white text-3xl">→</span>
+              </div>
+            </Card>
+          </div>
         </div>
-        <div className="grid grid-cols-2 gap-4 mt-4 list-disc   text-base md:text-lg leading-relaxed text-gray-300">
-          <p>
-            <span className="text-xl font-medium">Email:</span>{" "}
-            amanpachisia3@gmail.com
-          </p>
-          <p>
-            <span className="text-xl font-medium">Contact : {""}</span>
-            9953558983
-          </p>
-        </div>
-        <div className="grid grid-cols-2 gap-10 justify-center text-center mt-6">
+        <div className="flex flex-wrap gap-8 justify-center align-center mt-12">
+          <Button type="primary" size="large" className="ButtonClass">
+            Go to Behance{" "}
+          </Button>
+
           <a href={waLink} target="_blank" rel="noopener noreferrer">
-            <img src={whatsp} alt="Portfolio Line" />
+            <Button type="primary" size="large" className="ButtonClass">
+              Go to Instagram{" "}
+            </Button>
           </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/aman-pachisia/"
-          >
-            <img src={linkedin} alt="Portfolio Line" />
-          </a>
-
-          {/* <img src={github} alt="Portfolio Line" /> */}
         </div>
-        <Row justify="center" className="z-10 relative mt-8">
-          <div className="bg-black rounded-xl px-4 py-4 shadow border border-gray-700 w-full max-w-3xl">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-              <a href="/resume.pdf" download className="w-full sm:w-auto">
-                <Button
-                  type="default"
-                  className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
-                >
-                  Download Resume
-                </Button>
-              </a>
 
-              <Divider
-                type="vertical"
-                className="hidden sm:block bg-gray-600 h-6"
+        <div className="mt-6 flex flex-col items-center text-center">
+          <h1 className="text-4xl text-white">Contact Me</h1>
+          <div className=" p-4 rounded-lg text-center">
+            <div className=" p-4 rounded-lg text-center">
+              <img
+                src={Line}
+                className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
+                alt="Portfolio Line"
               />
-
-              <a
-                href={waLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto"
-              >
-                <Button
-                  type="default"
-                  className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
-                >
-                  Contact Now
-                </Button>
-              </a>
-
-              <Divider
-                type="vertical"
-                className="hidden sm:block bg-gray-600 h-6"
-              />
-
-              <Button
-                type="default"
-                className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
-              >
-                Work Portfolio
-              </Button>
             </div>
           </div>
-        </Row>
+          <div className="grid grid-cols-2 gap-4 mt-4 list-disc   text-base md:text-lg leading-relaxed text-gray-300">
+            <p>
+              <span className="text-xl font-medium">Email:</span>{" "}
+              amanpachisia3@gmail.com
+            </p>
+            <p>
+              <span className="text-xl font-medium">Contact : {""}</span>
+              9953558983
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-10 justify-center text-center mt-6">
+            <a href={waLink} target="_blank" rel="noopener noreferrer">
+              <img src={whatsp} alt="Portfolio Line" />
+            </a>
+
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/aman-pachisia/"
+            >
+              <img src={linkedin} alt="Portfolio Line" />
+            </a>
+
+            {/* <img src={github} alt="Portfolio Line" /> */}
+          </div>
+          <Row justify="center" className="z-10 relative mt-8">
+            <div className="bg-black rounded-xl px-4 py-4 shadow border border-gray-700 w-full max-w-3xl">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <a href="/resume.pdf" download className="w-full sm:w-auto">
+                  <Button
+                    type="default"
+                    className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
+                  >
+                    Download Resume
+                  </Button>
+                </a>
+
+                <Divider
+                  type="vertical"
+                  className="hidden sm:block bg-gray-600 h-6"
+                />
+
+                <a
+                  href={waLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto"
+                >
+                  <Button
+                    type="default"
+                    className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
+                  >
+                    Contact Now
+                  </Button>
+                </a>
+
+                <Divider
+                  type="vertical"
+                  className="hidden sm:block bg-gray-600 h-6"
+                />
+
+                <Button
+                  type="default"
+                  className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
+                >
+                  Work Portfolio
+                </Button>
+              </div>
+            </div>
+          </Row>
+        </div>
       </div>
     </div>
   );
