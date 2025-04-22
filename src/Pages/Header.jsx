@@ -420,8 +420,6 @@ const HeroSection = () => {
                     <p className="text-xl font-semibold mt-2 text-gray-400">
                       September, 2021 - December, 2023
                     </p>
-                   
-                    </p>
 
                     <div className="flex flex-wrap gap-6 mt-6">
                       <a
