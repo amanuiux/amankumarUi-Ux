@@ -48,7 +48,7 @@ const HeroSection = () => {
 
       {/* Grid Background */}
       <div
-        className="absolute inset-0   z-50 pointer-events-none"
+        className="absolute inset-0    pointer-events-none"
         style={{
           backgroundImage: `url(${topgridBG})`,
           backgroundRepeat: "no-repeat",
