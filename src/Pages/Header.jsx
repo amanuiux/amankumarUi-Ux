@@ -48,7 +48,7 @@ const HeroSection = () => {
 
       {/* Grid Background */}
       <div
-        className="absolute inset-0    pointer-events-none"
+        className="absolute inset-0   pointer-events-none"
         style={{
           backgroundImage: `url(${topgridBG})`,
           backgroundRepeat: "no-repeat",
@@ -507,14 +507,14 @@ const HeroSection = () => {
             {" "}
             <Card
               hoverable
-              className="background-color  border-0 shadow-md rounded-lg overflow-hidden"
+              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
               cover={
                 <img alt="example" src={A} className="h-72 object-cover" />
               }
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                  style={{
+                style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -545,7 +545,7 @@ const HeroSection = () => {
                     color: "transparent",
                   }}
                   type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
                   //   icon={<FiFigma size={24} />}
                 >
                   View More
@@ -562,7 +562,7 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                  style={{
+                style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -586,7 +586,7 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                  style={{
+                style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -610,7 +610,7 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                  style={{
+                style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -634,7 +634,7 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                  style={{
+                style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -658,7 +658,7 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                  style={{
+                style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -682,7 +682,7 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                  style={{
+                style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
