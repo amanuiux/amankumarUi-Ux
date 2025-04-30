@@ -33,7 +33,8 @@ import F from "../../src/assets/Icons/F.png";
 import G from "../../src/assets/Icons/G.png";
 import H from "../../src/assets/Icons/H.png";
 import J from "../../src/assets/Icons/J.png";
-
+import oodles from "../../src/assets/Icons/oodles.png";
+import sundaylabs from "../../src/assets/Icons/sundaylabs.png";
 const HeroSection = () => {
   const experiences = ["ADD TEXT HERE"];
 
@@ -106,8 +107,17 @@ const HeroSection = () => {
           {/* Left Column */}
           <Col xs={24} md={12}>
             <div className="text-left px-2 ">
-              <h1 className="text-4xl sm:text-5xl font-bold mb-2">
-                <span className="text-gray-300">Aman Kumar</span>
+              <h1 className="text-4xl sm:text-5xl font-bold mb-2 ">
+                <span
+                  style={{
+                    background:
+                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
+                >
+                  Aman Kumar
+                </span>
               </h1>
               <h2 className="text-xl sm:text-2xl text-gray-400 mb-4">
                 (UI/UX Designer)
@@ -262,26 +272,29 @@ const HeroSection = () => {
               <Row gutter={[32, 32]} align="middle">
                 {/* Left Column */}
                 <Col xs={24} md={12}>
-                  <div className="text-left px-4 ">
+                  <div className="text-left px-2 ">
                     <div>
                       {" "}
-                      <img
-                        src={zillitlogo}
-                        className="rounded-xl border-[3px] border-white text-lg h-32 w-32 mt-2"
-                        alt="Zillit Logo"
-                      />
-                      <p className="text-4xl font-semibold mt-4 ml-8 text-gray-300">
-                        Zillit
-                      </p>
+                      <div className="justify-items-start">
+                        {" "}
+                        <img
+                          src={zillitlogo}
+                          className="rounded-[8px] h-16 w-16 border-white text-lg  mt-2"
+                          alt="Zillit Logo"
+                        />
+                        <p className="text-4xl font-extrabold mt-4 text-gray-300">
+                          Zillit
+                        </p>
+                        <p className="text-xl font-semibold text-[#E5E5E5] mb-2">
+                          (Sr. UI/UX Designer)
+                        </p>
+                        <p className="text-base font-normal text-[#E5E5E5]">
+                          July, 2024 - Currently Working
+                        </p>
+                      </div>
                     </div>
-                    <p className="text-2xl font-semibold mt-2 text-gray-400">
-                      (Sr. UI/UX Designer)
-                    </p>
-                    <p className="text-xl font-semibold mt-2 text-gray-400">
-                      July, 2024 - Currently Working
-                    </p>
 
-                    <div className="flex flex-wrap gap-6 mt-6">
+                    <div className="flex flex-wrap gap-6 mt-12">
                       <a
                         href="
                                     https://web.zillit.com/home"
@@ -303,11 +316,11 @@ const HeroSection = () => {
                 {/* Right Column - Experience List */}
                 <Col xs={24} md={12}>
                   <div
-                    className="text-white gap-3 md:p-6 text-lg font-md p-4 leading-loose
+                    className="text-white gap-3 md:p-6 text-base font-md p-4 leading-loose
 
 "
                   >
-                    <p>
+                    <p className="text-start">
                       As a UI/UX Designer at ITOP, I contributed to the design
                       of Zillit, a comprehensive dashboard tailored to manage
                       and streamline all aspects of pre-production, production,
@@ -342,18 +355,18 @@ const HeroSection = () => {
                     <div>
                       {" "}
                       <img
-                        src={zillitlogo}
-                        className="rounded-xl border-[3px] border-white text-lg h-32 w-32 mt-2"
+                        src={sundaylabs}
+                        className="rounded-[8px] h-16 w-16 border-white text-lg  mt-2"
                         alt="Zillit Logo"
                       />
-                      <p className="text-4xl font-semibold mt-4 ml-8 text-gray-300">
+                      <p className="text-4xl font-extrabold mt-4  text-gray-300">
                         Sunday Labs (Growpital | Zeeta farms)
                       </p>
                     </div>
-                    <p className="text-2xl font-semibold mt-2 text-gray-400">
+                    <p className="text-xl font-semibold text-[#E5E5E5] mb-2">
                       (UI/UX Designer)
                     </p>
-                    <p className="text-xl font-semibold mt-2 text-gray-400">
+                    <p className="text-base font-normal text-[#E5E5E5]">
                       December, 2023 - April, 2024
                     </p>
 
@@ -370,11 +383,7 @@ const HeroSection = () => {
 
                 {/* Right Column - Experience List */}
                 <Col xs={24} md={12}>
-                  <div
-                    className="text-white gap-3 md:p-6 text-lg font-md p-4 leading-loose
-
-"
-                  >
+                  <div className="text-white gap-3 md:p-6 text-base font-md p-4 leading-loose text-start ">
                     <p>
                       Working for Gropital (Zetta farms), My duty is to creating
                       intuitive interfaces and delightful user experiences.
@@ -406,18 +415,18 @@ const HeroSection = () => {
                     <div>
                       {" "}
                       <img
-                        src={zillitlogo}
-                        className="rounded-xl border-[3px] border-white text-lg h-32 w-32 mt-2"
+                        src={oodles}
+                        className="rounded-[8px] h-16 w-16 border-white text-lg  mt-2"
                         alt="Zillit Logo"
                       />
-                      <p className="text-4xl font-semibold mt-4 ml-8 text-gray-300">
+                      <p className="text-4xl font-extrabold mt-4  text-gray-300">
                         Oodles Technology | Oodles Blockchain
                       </p>
                     </div>
-                    <p className="text-2xl font-semibold mt-2 text-gray-400">
+                    <p className="text-xl font-semibold text-[#E5E5E5] mb-2">
                       (UI/UX Designer)
                     </p>
-                    <p className="text-xl font-semibold mt-2 text-gray-400">
+                    <p className="text-base font-normal text-[#E5E5E5]">
                       September, 2021 - December, 2023
                     </p>
 
@@ -434,11 +443,7 @@ const HeroSection = () => {
 
                 {/* Right Column - Experience List */}
                 <Col xs={24} md={12}>
-                  <div
-                    className="text-white gap-3 md:p-6 text-lg font-md p-4 leading-loose
-
-"
-                  >
+                  <div className="text-white gap-3 md:p-6 text-base font-md p-4 leading-loose text-start">
                     <p>
                       Conducting user research and testing to gather feedback
                       and ensure that the designs are optimized for user
@@ -502,15 +507,21 @@ const HeroSection = () => {
             {" "}
             <Card
               hoverable
-              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              className="background-color  border-0 shadow-md rounded-lg overflow-hidden"
               cover={
                 <img alt="example" src={A} className="h-72 object-cover" />
               }
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
+                  style={{
+                    background:
+                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
                   type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
                   //   icon={<FiFigma size={24} />}
                 >
                   View More
@@ -527,8 +538,14 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
+                  style={{
+                    background:
+                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
                   type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
                   //   icon={<FiFigma size={24} />}
                 >
                   View More
@@ -545,8 +562,14 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
+                  style={{
+                    background:
+                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
                   type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
                   //   icon={<FiFigma size={24} />}
                 >
                   View More
@@ -563,8 +586,14 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
+                  style={{
+                    background:
+                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
                   type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
                   //   icon={<FiFigma size={24} />}
                 >
                   View More
@@ -581,8 +610,14 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
+                  style={{
+                    background:
+                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
                   type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
                   //   icon={<FiFigma size={24} />}
                 >
                   View More
@@ -599,8 +634,14 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
+                  style={{
+                    background:
+                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
                   type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
                   //   icon={<FiFigma size={24} />}
                 >
                   View More
@@ -617,8 +658,14 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
+                  style={{
+                    background:
+                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
                   type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
                   //   icon={<FiFigma size={24} />}
                 >
                   View More
@@ -635,8 +682,14 @@ const HeroSection = () => {
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
+                  style={{
+                    background:
+                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
                   type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold hover:text-gray-300"
                   //   icon={<FiFigma size={24} />}
                 >
                   View More
