@@ -35,6 +35,15 @@ import H from "../../src/assets/Icons/H.png";
 import J from "../../src/assets/Icons/J.png";
 import oodles from "../../src/assets/Icons/oodles.png";
 import sundaylabs from "../../src/assets/Icons/sundaylabs.png";
+import p01 from "../../src/assets/Icons/p01.png";
+import p02 from "../../src/assets/Icons/p02.png";
+import p03 from "../../src/assets/Icons/p03.png";
+import p04 from "../../src/assets/Icons/p04.png";
+import p05 from "../../src/assets/Icons/p05.png";
+import p06 from "../../src/assets/Icons/p06.png";
+import p07 from "../../src/assets/Icons/p07.png";
+import p08 from "../../src/assets/Icons/p08.png";
+import p09 from "../../src/assets/Icons/p09.png";
 const HeroSection = () => {
   const experiences = ["ADD TEXT HERE"];
 
@@ -493,7 +502,7 @@ const HeroSection = () => {
           {/* </div> */}
         </Row>
 
-        <div className="mt-12 flex flex-col items-center text-center">
+        <div className="mt-3 flex flex-col items-center text-center">
           <h1 className="text-4xl text-white">Portfolio</h1>
           <div className="  rounded-lg text-center">
             <img
@@ -503,26 +512,26 @@ const HeroSection = () => {
             />
           </div>
 
-          <div className="flex flex-wrap gap-8 justify-center mt-4 ">
+          <div className="flex flex-wrap gap-8 justify-center mt-2">
             {" "}
             <Card
               hoverable
-              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              className="cardbody h-96  max-h-96 border-0 shadow-md rounded-lg p-0 m-0 overflow-hidden"
               cover={
-                <img alt="example" src={A} className="h-72 object-cover" />
+                <img alt="example" src={p01} className="h-72 object-cover" />
               }
             >
-              <div className="flex items-center justify-between pt-4">
+              {/* Custom bottom row below image */}
+              <div className="flex items-center justify-between px-4 py-2">
                 <Button
-                style={{
+                  type="text"
+                  className="p-0 m-0 flex items-center text-white text-3xl font-bold hover:text-gray-300"
+                  style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
                     color: "transparent",
                   }}
-                  type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
-                  //   icon={<FiFigma size={24} />}
                 >
                   View More
                 </Button>
@@ -531,9 +540,9 @@ const HeroSection = () => {
             </Card>
             <Card
               hoverable
-              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
               cover={
-                <img alt="example" src={A} className="h-72 object-cover" />
+                <img alt="example" src={p02} className="h-72 object-cover" />
               }
             >
               <div className="flex items-center justify-between pt-4">
@@ -555,14 +564,14 @@ const HeroSection = () => {
             </Card>
             <Card
               hoverable
-              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
               cover={
-                <img alt="example" src={B} className="h-72 object-cover" />
+                <img alt="example" src={p03} className="h-72 object-cover" />
               }
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                style={{
+                  style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -579,14 +588,14 @@ const HeroSection = () => {
             </Card>
             <Card
               hoverable
-              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
               cover={
-                <img alt="example" src={C} className="h-72 object-cover" />
+                <img alt="example" src={p04} className="h-72 object-cover" />
               }
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                style={{
+                  style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -603,14 +612,14 @@ const HeroSection = () => {
             </Card>
             <Card
               hoverable
-              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
               cover={
-                <img alt="example" src={D} className="h-72 object-cover" />
+                <img alt="example" src={p05} className="h-72 object-cover" />
               }
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                style={{
+                  style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -627,14 +636,14 @@ const HeroSection = () => {
             </Card>
             <Card
               hoverable
-              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
               cover={
-                <img alt="example" src={E} className="h-72 object-cover" />
+                <img alt="example" src={p06} className="h-72 object-cover" />
               }
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                style={{
+                  style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -651,14 +660,14 @@ const HeroSection = () => {
             </Card>
             <Card
               hoverable
-              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
               cover={
-                <img alt="example" src={F} className="h-72 object-cover" />
+                <img alt="example" src={p07} className="h-72 object-cover" />
               }
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                style={{
+                  style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
@@ -675,14 +684,38 @@ const HeroSection = () => {
             </Card>
             <Card
               hoverable
-              className="bg-black border-0 shadow-md rounded-lg overflow-hidden"
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
               cover={
-                <img alt="example" src={G} className="h-72 object-cover" />
+                <img alt="example" src={p08} className="h-72 object-cover" />
               }
             >
               <div className="flex items-center justify-between pt-4">
                 <Button
-                style={{
+                  style={{
+                    background:
+                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
+                  type="text"
+                  className=" flex items-center gap-2 text-white text-3xl font-bold hover:text-gray-300"
+                  //   icon={<FiFigma size={24} />}
+                >
+                  View More
+                </Button>
+                <span className="text-white text-3xl">→</span>
+              </div>
+            </Card>
+            <Card
+              hoverable
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={p09} className="h-72 object-cover" />
+              }
+            >
+              <div className="flex items-center justify-between pt-4">
+                <Button
+                  style={{
                     background:
                       "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
                     WebkitBackgroundClip: "text",
