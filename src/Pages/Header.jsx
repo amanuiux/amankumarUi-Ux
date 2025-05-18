@@ -167,7 +167,7 @@ const HeroSection = () => {
         </Row>
 
         {/* Skills Placeholder */}
-        <div className="mt-12 flex flex-col items-center text-center">
+        <div className="mt-24 flex flex-col items-center text-center">
           <h1 className="text-4xl text-white">Tools</h1>
           <div className="  rounded-lg text-center">
             <img
@@ -210,7 +210,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center text-center">
+        <div className="mt-24 flex flex-col items-center text-center">
           <h1 className="text-4xl text-white">Skills</h1>
           <div className="  rounded-lg text-center">
             <img
@@ -257,17 +257,16 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="mt-6 flex flex-col items-center text-center">
-          <h1 className="text-4xl text-white">Work Experience</h1>
-          <div className=" p-4 rounded-lg text-center">
-            <div className=" p-4 rounded-lg text-center">
-              <img
-                src={Line}
-                className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
-                alt="Portfolio Line"
-              />
-            </div>
+        <div className="mt-24 flex flex-col items-center text-center">
+          <h1 className="text-4xl text-white">Work Experiance</h1>
+          <div className="  rounded-lg text-center">
+            <img
+              src={Line}
+              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-8"
+              alt="Portfolio Line"
+            />
           </div>
+
           <div className="relative z-10 p-0 rounded-xl bg-gradient-to-r from-[#E9D0FF] to-[#424242]">
             <Card
               className="bg-[#131313] rounded-xl"
@@ -467,16 +466,14 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="mt-6 flex flex-col items-center text-center">
-          <h1 className="text-4xl text-white">Want to hire</h1>
-          <div className=" p-4 rounded-lg text-center">
-            <div className=" p-4 rounded-lg text-center">
-              <img
-                src={Line}
-                className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
-                alt="Portfolio Line"
-              />
-            </div>
+        <div className="mt-24 flex flex-col items-center text-center">
+          <h1 className="text-4xl text-white">Want to Hire</h1>
+          <div className="rounded-lg">
+            <img
+              src={Line}
+              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-8"
+              alt="Decorative line under Portfolio heading"
+            />
           </div>
         </div>
         <Row justify="center" className="z-10 relative mb-10 gap-3">
@@ -502,7 +499,7 @@ const HeroSection = () => {
           {/* </div> */}
         </Row>
 
-        <div className="mt-3 flex flex-col items-center text-center">
+        <div className="mt-24 flex flex-col items-center text-center">
           <h1 className="text-4xl text-white">Portfolio</h1>
           <div className="  rounded-lg text-center">
             <img
@@ -733,29 +730,39 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="flex flex-wrap gap-8 justify-center align-center mt-12">
-          <Button type="primary" size="large" className="ButtonClass">
-            Go to Behance{" "}
-          </Button>
+          <a
+            href="
+          https://www.behance.net/amanpachisia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button type="primary" size="large" className="ButtonClass">
+              Go to Behance{" "}
+            </Button>
+          </a>
 
-          <a href={waLink} target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/amanuiux2024/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button type="primary" size="large" className="ButtonClass">
               Go to Instagram{" "}
             </Button>
           </a>
         </div>
 
-        <div className="mt-6 flex flex-col items-center text-center">
+        <div className="mt-24 flex flex-col items-center text-center">
           <h1 className="text-4xl text-white">Contact Me</h1>
-          <div className=" p-4 rounded-lg text-center">
-            <div className=" p-4 rounded-lg text-center">
-              <img
-                src={Line}
-                className="rounded-xl border-[3px] border-white max-w-[300px] w-full mt-2"
-                alt="Portfolio Line"
-              />
-            </div>
+          <div className="  rounded-lg text-center">
+            <img
+              src={Line}
+              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-8"
+              alt="Portfolio Line"
+            />
           </div>
-          <div className="grid grid-cols-2 gap-4 mt-4 list-disc   text-base md:text-lg leading-relaxed text-gray-300">
+
+          <div className="grid grid-cols-2 gap-4 mt-2 list-disc   text-base md:text-lg leading-relaxed text-gray-300">
             <p>
               <span className="text-xl font-medium">Email:</span>{" "}
               amanpachisia3@gmail.com
@@ -765,7 +772,7 @@ const HeroSection = () => {
               9953558983
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-10 justify-center text-center mt-6">
+          <div className="grid grid-cols-2 gap-10 justify-center text-center mt-8">
             <a href={waLink} target="_blank" rel="noopener noreferrer">
               <img src={whatsp} alt="Portfolio Line" />
             </a>
@@ -780,51 +787,52 @@ const HeroSection = () => {
 
             {/* <img src={github} alt="Portfolio Line" /> */}
           </div>
-          <Row justify="center" className="z-10 relative mt-8">
-            <div className="bg-black rounded-xl px-4 py-4 shadow border border-gray-700 w-full max-w-3xl">
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-                <a href="/resume.pdf" download className="w-full sm:w-auto">
-                  <Button
-                    type="default"
-                    className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
-                  >
-                    Download Resume
-                  </Button>
-                </a>
-
-                <Divider
-                  type="vertical"
-                  className="hidden sm:block bg-gray-600 h-6"
-                />
-
-                <a
-                  href={waLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto"
-                >
-                  <Button
-                    type="default"
-                    className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
-                  >
-                    Contact Now
-                  </Button>
-                </a>
-
-                <Divider
-                  type="vertical"
-                  className="hidden sm:block bg-gray-600 h-6"
-                />
-
+          <Row justify="center" className="z-10 relative mb-6 mt-24">
+          <div className="bg-black rounded-[9px] px-6 py-1 shadow border border-gray-700  w-[447px]">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-1 ">
+              <a href="/AmanResume.pdf" download className="w-full sm:w-auto">
                 <Button
                   type="default"
                   className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
                 >
-                  Work Portfolio
+                  Download Resume
                 </Button>
-              </div>
+              </a>
+
+              <Divider
+                type="vertical"
+                className="hidden sm:block bg-gray-600 h-6"
+              />
+
+              <a
+                href={waLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+              >
+                <Button
+                  type="default"
+                  className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
+                >
+                  Contact Now
+                </Button>
+              </a>
+
+              <Divider
+                type="vertical"
+                className="hidden sm:block bg-gray-600 h-6"
+              />
+
+              <Button
+                type="default"
+                className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
+              >
+                Work Portfolio
+              </Button>
             </div>
-          </Row>
+          </div>
+        </Row>
+          
         </div>
       </div>
     </div>
