@@ -44,6 +44,19 @@ import p06 from "../../src/assets/Icons/p06.png";
 import p07 from "../../src/assets/Icons/p07.png";
 import p08 from "../../src/assets/Icons/p08.png";
 import p09 from "../../src/assets/Icons/p09.png";
+import whatsaap5 from "../../src/assets/Icons/whatsaap5.png";
+import linked5 from "../../src/assets/Icons/linked5.png";
+import instagram5 from "../../src/assets/Icons/instagram5.png";
+import behance5 from "../../src/assets/Icons/behance5.png";
+import g01 from "../../src/assets/Icons/g01.png";
+import g02 from "../../src/assets/Icons/g02.png";
+import g03 from "../../src/assets/Icons/g03.png";
+import g04 from "../../src/assets/Icons/g04.png";
+import g05 from "../../src/assets/Icons/g05.png";
+import g06 from "../../src/assets/Icons/g06.png";
+import g07 from "../../src/assets/Icons/g07.png";
+import g08 from "../../src/assets/Icons/g08.png";
+import g09 from "../../src/assets/Icons/g09.png";
 const HeroSection = () => {
   const experiences = ["ADD TEXT HERE"];
 
@@ -97,18 +110,19 @@ const HeroSection = () => {
                   Contact Now
                 </Button>
               </a>
-
               <Divider
                 type="vertical"
                 className="hidden sm:block bg-gray-600 h-6"
               />
-
-              <Button
-                type="default"
-                className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
-              >
-                Work Portfolio
-              </Button>
+              <a href="https://www.behance.net/amanpachisia" target="_blank">
+                {" "}
+                <Button
+                  type="default"
+                  className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
+                >
+                  Work Portfolio
+                </Button>
+              </a>
             </div>
           </div>
         </Row>
@@ -131,7 +145,7 @@ const HeroSection = () => {
               <h2 className="text-xl sm:text-2xl text-gray-400 mb-4">
                 (UI/UX Designer)
               </h2>
-              <p className="text-gray-300 mb-6  max-w-[450px] leading-relaxed">
+              <p className="text-gray-300 mb-12  max-w-[450px] leading-relaxed">
                 I am a UI/UX Designer with four years of experience in both
                 service-based and product-based IT companies. I specialise in
                 creating intuitive and visually engaging designs that enhance
@@ -143,9 +157,12 @@ const HeroSection = () => {
               </p>
 
               <div className="flex flex-wrap gap-8">
-                <Button type="primary" size="large" className="ButtonClass">
-                  Download Resume
-                </Button>
+                <a href="/AmanResume.pdf" download>
+                  {" "}
+                  <Button type="primary" size="large" className="ButtonClass">
+                    Download Resume
+                  </Button>
+                </a>
 
                 <a href={waLink} target="_blank" rel="noopener noreferrer">
                   <Button type="primary" size="large" className="ButtonClass">
@@ -172,7 +189,7 @@ const HeroSection = () => {
           <div className="  rounded-lg text-center">
             <img
               src={Line}
-              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-8"
+              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-2"
               alt="Portfolio Line"
             />
           </div>
@@ -210,7 +227,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="mt-24 flex flex-col items-center text-center">
+        <div className="mt-32 flex flex-col items-center text-center">
           <h1 className="text-4xl text-white">Skills</h1>
           <div className="  rounded-lg text-center">
             <img
@@ -219,7 +236,7 @@ const HeroSection = () => {
               alt="Portfolio Line"
             />
           </div>
-          <div className="mt-4">
+          <div className="mt-2">
             <div className="grid grid-row-6 gap-4 mb-2">
               <div className="text-white justify-center items-center font-medium text-lg flex flex-wrap gap-4 text-center">
                 <p className="skilsection">Wireframe</p>
@@ -257,12 +274,12 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="mt-24 flex flex-col items-center text-center">
+        <div className="mt-32 flex flex-col items-center text-center">
           <h1 className="text-4xl text-white">Work Experiance</h1>
           <div className="  rounded-lg text-center">
             <img
               src={Line}
-              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-8"
+              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-10"
               alt="Portfolio Line"
             />
           </div>
@@ -466,19 +483,19 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="mt-24 flex flex-col items-center text-center">
+        <div className="mt-32 flex flex-col items-center text-center">
           <h1 className="text-4xl text-white">Want to Hire</h1>
           <div className="rounded-lg">
             <img
               src={Line}
-              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-8"
+              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-10"
               alt="Decorative line under Portfolio heading"
             />
           </div>
         </div>
-        <Row justify="center" className="z-10 relative mb-10 gap-3">
+        <Row justify="center" className="z-10 relative mb-10 gap-10">
           {/* <div className="bg-black rounded-xl px-4 h-14 flex items-center gap-4 shadow border border-gray-700"> */}
-          <a href="/resume.pdf" download>
+          <a href="/AmanResume.pdf" download>
             <Button type="primary" className="ButtonClass">
               Download Resume
             </Button>
@@ -499,237 +516,114 @@ const HeroSection = () => {
           {/* </div> */}
         </Row>
 
-        <div className="mt-24 flex flex-col items-center text-center">
+        <div className="mt-32 flex flex-col items-center text-center">
           <h1 className="text-4xl text-white">Portfolio</h1>
           <div className="  rounded-lg text-center">
             <img
               src={Line}
-              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-8"
+              className="rounded-xl border-[3px] border-white max-w-[300px] w-full mb-6 "
               alt="Portfolio Line"
             />
           </div>
 
-          <div className="flex flex-wrap gap-8 justify-center mt-2">
+          <div className="flex flex-wrap gap-16  justify-center ">
             {" "}
-            <Card
-              hoverable
-              className="cardbody h-96  max-h-96 border-0 shadow-md rounded-lg p-0 m-0 overflow-hidden"
-              cover={
-                <img alt="example" src={p01} className="h-72 object-cover" />
-              }
-            >
-              {/* Custom bottom row below image */}
-              <div className="flex items-center justify-between px-4 py-2">
-                <Button
-                  type="text"
-                  className="p-0 m-0 flex items-center text-white text-3xl font-bold hover:text-gray-300"
-                  style={{
-                    background:
-                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}
-                >
-                  View More
-                </Button>
-                <span className="text-white text-3xl">→</span>
-              </div>
-            </Card>
-            <Card
-              hoverable
-              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
-              cover={
-                <img alt="example" src={p02} className="h-72 object-cover" />
-              }
-            >
-              <div className="flex items-center justify-between pt-4">
-                <Button
-                  style={{
-                    background:
-                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}
-                  type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold underline hover:text-gray-300"
-                  //   icon={<FiFigma size={24} />}
-                >
-                  View More
-                </Button>
-                <span className="text-white text-3xl">→</span>
-              </div>
-            </Card>
-            <Card
-              hoverable
-              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
-              cover={
-                <img alt="example" src={p03} className="h-72 object-cover" />
-              }
-            >
-              <div className="flex items-center justify-between pt-4">
-                <Button
-                  style={{
-                    background:
-                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}
-                  type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
-                  //   icon={<FiFigma size={24} />}
-                >
-                  View More
-                </Button>
-                <span className="text-white text-3xl">→</span>
-              </div>
-            </Card>
-            <Card
-              hoverable
-              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
-              cover={
-                <img alt="example" src={p04} className="h-72 object-cover" />
-              }
-            >
-              <div className="flex items-center justify-between pt-4">
-                <Button
-                  style={{
-                    background:
-                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}
-                  type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
-                  //   icon={<FiFigma size={24} />}
-                >
-                  View More
-                </Button>
-                <span className="text-white text-3xl">→</span>
-              </div>
-            </Card>
-            <Card
-              hoverable
-              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
-              cover={
-                <img alt="example" src={p05} className="h-72 object-cover" />
-              }
-            >
-              <div className="flex items-center justify-between pt-4">
-                <Button
-                  style={{
-                    background:
-                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}
-                  type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
-                  //   icon={<FiFigma size={24} />}
-                >
-                  View More
-                </Button>
-                <span className="text-white text-3xl">→</span>
-              </div>
-            </Card>
-            <Card
-              hoverable
-              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
-              cover={
-                <img alt="example" src={p06} className="h-72 object-cover" />
-              }
-            >
-              <div className="flex items-center justify-between pt-4">
-                <Button
-                  style={{
-                    background:
-                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}
-                  type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
-                  //   icon={<FiFigma size={24} />}
-                >
-                  View More
-                </Button>
-                <span className="text-white text-3xl">→</span>
-              </div>
-            </Card>
-            <Card
-              hoverable
-              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
-              cover={
-                <img alt="example" src={p07} className="h-72 object-cover" />
-              }
-            >
-              <div className="flex items-center justify-between pt-4">
-                <Button
-                  style={{
-                    background:
-                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}
-                  type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold  hover:text-gray-300"
-                  //   icon={<FiFigma size={24} />}
-                >
-                  View More
-                </Button>
-                <span className="text-white text-3xl">→</span>
-              </div>
-            </Card>
-            <Card
-              hoverable
-              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
-              cover={
-                <img alt="example" src={p08} className="h-72 object-cover" />
-              }
-            >
-              <div className="flex items-center justify-between pt-4">
-                <Button
-                  style={{
-                    background:
-                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}
-                  type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold hover:text-gray-300"
-                  //   icon={<FiFigma size={24} />}
-                >
-                  View More
-                </Button>
-                <span className="text-white text-3xl">→</span>
-              </div>
-            </Card>
-            <Card
-              hoverable
-              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
-              cover={
-                <img alt="example" src={p09} className="h-72 object-cover" />
-              }
-            >
-              <div className="flex items-center justify-between pt-4">
-                <Button
-                  style={{
-                    background:
-                      "linear-gradient(to right, #c4c4c4, #ffffff, #cacaca)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}
-                  type="text"
-                  className=" flex items-center gap-2 text-white text-3xl font-bold hover:text-gray-300"
-                  //   icon={<FiFigma size={24} />}
-                >
-                  View More
-                </Button>
-                <span className="text-white text-3xl">→</span>
-              </div>
-            </Card>
+            <a href="https://www.behance.net/gallery/196169581/Design-System-(UiUx)">
+              <Card
+                hoverable
+                className="cardbody h-96  max-h-96 border-0 shadow-md rounded-lg p-0 m-0 overflow-hidden"
+                cover={
+                  <img alt="example" src={g01} className="h-72 object-cover" />
+                }
+              >
+                {/* Custom bottom row below image */}
+              </Card>
+            </a>
+            <a href="https://www.figma.com/proto/rnORef65IwwI7U8HnCDF9T/Asingment-Growtomation?page-id=0%3A1&node-id=5-2933&viewport=1765%2C1465%2C0.1&t=OXES2NnKCW0ip8F3-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=5%3A2933">
+              <Card
+                hoverable
+                className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
+                cover={
+                  <img alt="example" src={g02} className="h-72 object-cover" />
+                }
+              ></Card>
+            </a>
+            <a href="https://www.figma.com/proto/BSI2ANX9MPRbhZUIZW7jgC/Extra-miles--Aman-?page-id=0%3A1&node-id=0-1498&viewport=2033%2C1418%2C0.18&t=dm75DMdkkGngI7ES-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=0%3A1498">
+              <Card
+                hoverable
+                className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
+                cover={
+                  <img alt="example" src={g03} className="h-72 object-cover" />
+                }
+              ></Card>
+            </a>
           </div>
         </div>
-        <div className="flex flex-wrap gap-8 justify-center align-center mt-12">
+        <div className="flex flex-wrap gap-16  justify-center ">
+          <a href="https://www.behance.net/gallery/180169689/Stolpersteine-Stories-of-Holocaust">
+            <Card
+              hoverable
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={g07} className="h-72 object-cover" />
+              }
+            ></Card>
+          </a>
+          <a href="https://www.behance.net/gallery/221619183/Crypto-Dashboard">
+            <Card
+              hoverable
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={g08} className="h-72 object-cover" />
+              }
+            >
+              {/*  */}
+            </Card>
+          </a>
+          <a href="https://www.figma.com/proto/IlgXenQLfJtj6QXFgliBHb/VIZARA-Assignment?page-id=0%3A1&node-id=1-3&viewport=382%2C345%2C0.14&t=Csk3pl0qAdmeuEpi-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A3">
+            <Card
+              hoverable
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={g09} className="h-72 object-cover" />
+              }
+            ></Card>
+          </a>
+        </div>
+        <div className="flex flex-wrap gap-16  justify-center ">
+          <a href="https://www.figma.com/proto/lgEg4w1iW5yrlIK7uMnlQ6/88Gravity?page-id=0%3A1&node-id=61-2092&viewport=-2405%2C566%2C0.24&t=k7gRgp55a2IseMvp-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=61%3A2092">
+            <Card
+              hoverable
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={g04} className="h-72 object-cover" />
+              }
+            ></Card>
+          </a>
+          <a href="https://www.figma.com/proto/C1eqVDpa2wgaDx6SSSN858/Webitlab-Assignment?page-id=0%3A1&node-id=1-442&viewport=411%2C108%2C0.09&t=5w9T8tyHXRTsKUQj-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A442">
+            <Card
+              hoverable
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={g05} className="h-72 object-cover" />
+              }
+            ></Card>
+          </a>
+          <a href="https://www.behance.net/gallery/173883495/Landing-page-Fintech-service">
+            <Card
+              hoverable
+              className="cardbody border-0 shadow-md rounded-lg overflow-hidden"
+              cover={
+                <img alt="example" src={g06} className="h-72 object-cover" />
+              }
+            ></Card>
+          </a>
+        </div>
+
+        <div
+          className="flex flex-wrap gap-8 justify-center align-center mt-8
+      "
+        >
           <a
             href="
           https://www.behance.net/amanpachisia"
@@ -772,9 +666,9 @@ const HeroSection = () => {
               9953558983
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-10 justify-center text-center mt-8">
+          <div className="grid grid-cols-4 gap-6 justify-center text-center mt-6">
             <a href={waLink} target="_blank" rel="noopener noreferrer">
-              <img src={whatsp} alt="Portfolio Line" />
+              <img className="h-12 w-12" src={whatsaap5} alt="Portfolio Line" />
             </a>
 
             <a
@@ -782,57 +676,75 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/aman-pachisia/"
             >
-              <img src={linkedin} alt="Portfolio Line" />
+              <img className="h-12 w-12" src={linked5} alt="Portfolio Line" />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/amanuiux2024/"
+            >
+              <img
+                className="h-12 w-12"
+                src={instagram5}
+                alt="Portfolio Line"
+              />
             </a>
 
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.behance.net/amanpachisia"
+            >
+              <img className="h-12 w-12" src={behance5} alt="Portfolio Line" />
+            </a>
             {/* <img src={github} alt="Portfolio Line" /> */}
           </div>
           <Row justify="center" className="z-10 relative mb-6 mt-24">
-          <div className="bg-black rounded-[9px] px-6 py-1 shadow border border-gray-700  w-[447px]">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-1 ">
-              <a href="/AmanResume.pdf" download className="w-full sm:w-auto">
-                <Button
-                  type="default"
-                  className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
+            <div className="bg-black rounded-[9px] px-6 py-1 shadow border border-gray-700  w-[447px]">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-1 ">
+                <a href="/AmanResume.pdf" download className="w-full sm:w-auto">
+                  <Button
+                    type="default"
+                    className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
+                  >
+                    Download Resume
+                  </Button>
+                </a>
+
+                <Divider
+                  type="vertical"
+                  className="hidden sm:block bg-gray-600 h-6"
+                />
+
+                <a
+                  href={waLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto"
                 >
-                  Download Resume
-                </Button>
-              </a>
-
-              <Divider
-                type="vertical"
-                className="hidden sm:block bg-gray-600 h-6"
-              />
-
-              <a
-                href={waLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto"
-              >
-                <Button
-                  type="default"
-                  className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
-                >
-                  Contact Now
-                </Button>
-              </a>
-
-              <Divider
-                type="vertical"
-                className="hidden sm:block bg-gray-600 h-6"
-              />
-
-              <Button
-                type="default"
-                className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
-              >
-                Work Portfolio
-              </Button>
+                  <Button
+                    type="default"
+                    className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
+                  >
+                    Contact Now
+                  </Button>
+                </a>
+                <Divider
+                  type="vertical"
+                  className="hidden sm:block bg-gray-600 h-6"
+                />
+                <a href="https://www.behance.net/amanpachisia" target="_blank">
+                  {" "}
+                  <Button
+                    type="default"
+                    className="w-full sm:w-auto text-white bg-black border-none hover:bg-white hover:text-black transition-all duration-300"
+                  >
+                    Work Portfolio
+                  </Button>
+                </a>
+              </div>
             </div>
-          </div>
-        </Row>
-          
+          </Row>
         </div>
       </div>
     </div>
